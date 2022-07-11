@@ -6,13 +6,6 @@
     list-style: none;
     color: black;
 }
-html{
-    font-size: 5px;
-    @include desktop{
-        font-size: 7px;
-    }
-}
-$fastMotion: .2s all ease;
 
 
 $maxWidth-phone : 359px;
@@ -48,3 +41,10 @@ $minWidth-desktop : 1920px;
       @content;
     }
 }
+html{
+    font-size: 5px;
+    @include desktop{
+        font-size: 7px;
+    }
+}
+$fastMotion: .2s all ease;
