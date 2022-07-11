@@ -1,0 +1,28 @@
+$offset:19rem;
+$gutter:6rem;
+$column: 12;
+
+
+
+
+@mixin row($offset, $columns, $gutter) {
+    width: 100%;
+    &-column{
+        display: grid;
+        grid-template-columns: repeat($columns , 1fr);
+        column-gap: $gutter;
+    }
+    &-bleed{
+        padding: $offset;
+    }
+  }
+
+  .row{
+    @include row(0 19rem , 12 , 6rem);
+    @include desktop { @include row(0 19rem , 12 , 6rem)}
+    @include laptop { @include row(0 19rem , 12 , 6rem)}
+    @include tablet { @include row(0 5rem , 8 , 5rem)}
+    @include phablet { @include row(0 3rem , 4 , 3rem)}
+    @include phone { @include row(0 3rem , 4 , 3rem)}
+
+}

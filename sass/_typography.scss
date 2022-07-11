@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@200;400;600&display=swap');
+
+$font-display: 'Dela Gothic One', cursive;
+$font-body: 'Inter', sans-serif;
+
+@mixin type($name, $weight, $size, $leading, $transform) {
+  font-family: $name;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $leading;
+  text-transform: $transform;
+}
+
+.cta{
+  box-sizing: content-box;
+  display: inline-block;
+  &-bold{
+    &-1{@include type($font-display, 400, 5rem, 3rem, uppercase);}
+    &-2{@include type($font-display, 400, 3.2rem, 3rem, uppercase);}
+    &-3{@include type($font-display, 400, 2.84rem, 3rem, uppercase);}
+  }
+  &-light{
+    &-1{@include type($font-body, 400, 5rem, 3rem, uppercase);}
+    &-2{@include type($font-body, 400, 3.2rem, 3rem, uppercase);}
+    &-3{@include type($font-body, 400, 2.8rem, 3rem, uppercase);}
+  }
+}
+
+.body{
+    &-1{@include type($font-body, 400, 3.2rem, 3rem, auto);}
+    &-2{@include type($font-body, 400, 2.8rem, 3rem, auto);}
+    &-3{@include type($font-body, 400, 2.4rem, 2rem, auto);}
+    &-4{@include type($font-body, 400, 2rem, 2rem, auto);}
+}
