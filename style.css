@@ -12,6 +12,10 @@ html {
   font-size: 5px;
 }
 
+.freeze {
+  overflow-y: hidden;
+}
+
 .row {
   width: 100%;
 }
