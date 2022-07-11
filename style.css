@@ -14,6 +14,7 @@ html {
 
 .freeze {
   overflow-y: hidden;
+  position: fixed;
 }
 
 .row {
