@@ -8,6 +8,32 @@
 }
 html{
     font-size: 5px;
+    @include desktop{
+        font-size: 7px;
+    }
 }
 $fastMotion: .2s all ease;
 
+
+.link{
+    &-light{
+        display: flex !important;
+      &:after{
+        content: url(asset/link-light.svg);
+        width: 3rem;
+        height: 3rem;
+        margin-left: 2rem;
+        display: inline-block;
+      }
+    }
+    &-dark{
+        display: flex !important;
+      &:after{
+        content: url(asset/link-dark.svg);
+        width: 3rem;
+        height: 3rem;
+        margin-left: 2rem;
+        display: inline-block;
+      }
+    }
+  }

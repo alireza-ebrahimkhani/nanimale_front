@@ -29,10 +29,18 @@
     &-right{
         justify-self: left;
         align-self: start;
+        & a{
+            @extend .cta;
+            @extend .cta-light-2;
+        }
     }
     &-left{
         justify-self: right;
         align-self: start;
+        & a{
+            @extend .cta;
+            @extend .cta-light-2;
+        }
     }
     &-items{
         & li{
@@ -148,28 +156,51 @@
                 color: $cream;
                 padding: 2rem 3rem;
                 margin-bottom: 2rem;
+                @extend .cta;
+                @extend .cta-bold-1;
             }
         }
         &-logo{
             fill: $cream;
+            @include phone{
+                display: none;
+            }
         }
         &-tagline{
             margin-top: 2rem;
             fill: $cream;
+            @include phone{
+                display: none;
+            }
         }
         &-lockup{
             margin: 0 auto;
             width: 54rem;
         }
-        
         &-socials{
-            text-align: center;
+            & ul{
+                text-align: center;
+            }
             & li{
                 display: inline-block;
             }
             & a{
                 color: $cream;
                 padding: 1rem 2rem;
+                @extend .cta;
+                @extend .cta-light-3;
+            }
+        }
+        &-emails{
+            & li{
+                display: inline-block;
+            }
+            & a{
+                color: $cream;
+                padding: 1rem 2rem;
+                @extend .cta;
+                @extend .cta-light-3;
+                @extend .link-dark;
             }
         }
     }

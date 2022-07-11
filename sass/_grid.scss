@@ -10,19 +10,19 @@ $column: 12;
     &-column{
         display: grid;
         grid-template-columns: repeat($columns , 1fr);
-        column-gap: $gutter;
+        gap: $gutter;
     }
     &-bleed{
-        padding: $offset;
+        padding-right: $offset;
+        padding-left: $offset;
     }
   }
 
   .row{
-    @include row(0 19rem , 12 , 6rem);
-    @include desktop { @include row(0 19rem , 12 , 6rem)}
-    @include laptop { @include row(0 19rem , 12 , 6rem)}
-    @include tablet { @include row(0 5rem , 8 , 5rem)}
-    @include phablet { @include row(0 3rem , 4 , 3rem)}
-    @include phone { @include row(0 3rem , 4 , 3rem)}
-
+    @include row(10rem , 12 , 6rem);
+    @include desktop { @include row(10rem , 12 , 6rem)}
+    @include laptop { @include row(5rem , 8 , 5rem)}
+    @include tablet { @include row(5rem , 8 , 5rem)}
+    @include phablet { @include row(3rem , 4 , 3rem)}
+    @include phone { @include row(3rem , 4 , 3rem)}
 }

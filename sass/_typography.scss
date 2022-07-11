@@ -16,8 +16,8 @@ $font-body: 'Inter', sans-serif;
   display: inline-block;
   &-bold{
     &-1{@include type($font-display, 400, 5rem, 3rem, uppercase);}
-    &-2{@include type($font-display, 400, 3.2rem, 3rem, uppercase);}
-    &-3{@include type($font-display, 400, 2.84rem, 3rem, uppercase);}
+    &-2{@include type($font-display, 400, 3.2rem, 5rem, uppercase);}
+    &-3{@include type($font-body, 600, 2.84rem, 3rem, auto);}
   }
   &-light{
     &-1{@include type($font-body, 400, 5rem, 3rem, uppercase);}
@@ -31,4 +31,9 @@ $font-body: 'Inter', sans-serif;
     &-2{@include type($font-body, 400, 2.8rem, 3rem, auto);}
     &-3{@include type($font-body, 400, 2.4rem, 2rem, auto);}
     &-4{@include type($font-body, 400, 2rem, 2rem, auto);}
+}
+
+.subtitle{
+  &-1{@include type($font-display, 400, 3.2rem, 3rem, auto);}
+  &-2{@include type($font-body, 600, 2.84rem, 3rem, auto);}
 }

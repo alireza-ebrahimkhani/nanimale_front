@@ -2,9 +2,12 @@
   overflow-y: scroll;
   position: unset;
   height: unset;
-@include tablet{
-  overflow-y: hidden;
-  position: fixed;
-  height: 100vh;
+  @include tablet{
+    overflow-y: hidden;
+    position: fixed;
+    height: 100vh;
+  }
 }
+.main{
+  background-color: white;
 }
