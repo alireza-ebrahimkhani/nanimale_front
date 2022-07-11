@@ -18,30 +18,6 @@ html {
   }
 }
 
-.link-light, .footer-emails a {
-  display: flex !important;
-}
-
-.link-light:after, .footer-emails a:after {
-  content: url(asset/link-light.svg);
-  width: 3rem;
-  height: 3rem;
-  margin-left: 2rem;
-  display: inline-block;
-}
-
-.link-dark, .header-drawer-emails a {
-  display: flex !important;
-}
-
-.link-dark:after, .header-drawer-emails a:after {
-  content: url(asset/link-dark.svg);
-  width: 3rem;
-  height: 3rem;
-  margin-left: 2rem;
-  display: inline-block;
-}
-
 .row {
   width: 100%;
 }
@@ -732,4 +708,28 @@ html {
 
 .main {
   background-color: white;
+}
+
+.link-light, .footer-emails a {
+  display: flex !important;
+}
+
+.link-light:after, .footer-emails a:after {
+  content: url(asset/link-light.svg);
+  width: 3rem;
+  height: 3rem;
+  margin-left: 2rem;
+  display: inline-block;
+}
+
+.link-dark, .header-drawer-emails a {
+  display: flex !important;
+}
+
+.link-dark:after, .header-drawer-emails a:after {
+  content: url(asset/link-dark.svg);
+  width: 3rem;
+  height: 3rem;
+  margin-left: 2rem;
+  display: inline-block;
 }
