@@ -10,6 +10,7 @@ hamico.addEventListener('click' , ()=>{
 })
 
 // fixed footer
+/*
 let main = document.querySelector(".main")
 let footer = document.querySelector(".footer")
 let footer_height = footer.clientHeight;
@@ -26,3 +27,4 @@ window.addEventListener('resize' , ()=>{
     
 })
 
+*/
