@@ -8,7 +8,7 @@
         padding: 10rem 0;
     }
     @include phablet{
-        position: unset;
+        position: static;
     }
     &-contact{
         display: flex;
