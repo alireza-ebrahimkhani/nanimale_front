@@ -58,6 +58,7 @@ $fastMotion: .2s all ease;
   }
 }
 body{
+  min-height: 100vh;
   height: -webkit-fill-available;
   height: fill-available;
 }
