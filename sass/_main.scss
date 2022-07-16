@@ -65,6 +65,8 @@
     }
   &-flavour{
     height: 100vh;
+    height: -webkit-fill-available;
+    height: fill-available;
     &-wrapper{
       display: flex;
       flex-direction: column;

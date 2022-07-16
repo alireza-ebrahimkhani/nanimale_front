@@ -9,7 +9,7 @@
 }
 
 html {
-  height: -webkit-fill-availible;
+  height: fill-available;
   font-size: 5px;
 }
 
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  height: -webkit-fill-availible;
+  height: fill-available;
 }
 
 .row {
@@ -353,6 +353,7 @@ body {
 
 .swiper-flavour {
   height: 100vh;
+  height: fill-available;
 }
 
 .swiper-flavour-wrapper {
