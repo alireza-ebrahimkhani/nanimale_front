@@ -9,6 +9,7 @@
 }
 
 html {
+  height: -webkit-fill-availible;
   font-size: 5px;
 }
 
@@ -24,6 +25,10 @@ html {
 
 .main-stick {
   padding-top: 0;
+}
+
+body {
+  height: -webkit-fill-availible;
 }
 
 .row {

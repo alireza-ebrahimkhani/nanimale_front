@@ -42,6 +42,7 @@ $minWidth-desktop : 1920px;
     }
 }
 html{
+  height: -webkit-fill-availible;
     font-size: 5px;
     @include desktop{
         font-size: 6px;
@@ -54,4 +55,7 @@ $fastMotion: .2s all ease;
   &-stick{
     padding-top: 0;
   }
+}
+body{
+  height: -webkit-fill-availible;
 }
