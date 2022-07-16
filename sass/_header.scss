@@ -223,6 +223,8 @@
     @include phablet{
         bottom: 3rem;
         left: 3rem;
+        width: 15rem;
+        height: 15rem;
     }
     & svg{
         fill: #FCDC43;
@@ -243,6 +245,10 @@
             font-size: 3rem;
             text-align: center;
             line-height: 3rem;
+            @include phablet{
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
         }
     }
 }
