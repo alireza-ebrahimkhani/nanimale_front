@@ -1,7 +1,8 @@
 .header{
-    background-color: white;
+    //background-color: white;
     width: 100%;
     z-index: 200;
+    position: absolute;
     @include tablet{
         position: fixed;
     }
@@ -11,6 +12,7 @@
     &-tagline{
         width: 36rem;
         margin-top: 2rem;
+        height: 5rem;
         @include tablet{
             display: none;
         }
@@ -203,6 +205,44 @@
                 @extend .cta-light-3;
                 @extend .link-dark;
             }
+        }
+    }
+}
+.star{
+    width: 18rem;
+    height: 18rem;
+    position: fixed;
+    bottom: 10rem;
+    left: 10rem;
+    z-index: 300;
+    transition: $fastMotion;
+    @include laptop{
+        bottom: 5rem;
+        left: 5rem;
+    }
+    @include phablet{
+        bottom: 3rem;
+        left: 3rem;
+    }
+    & svg{
+        fill: #FCDC43;
+    }
+    &--hide{
+        opacity: 0;
+        transition: $fastMotion;
+    }
+    &-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        z-index: 301;
+        & span{
+            display: block;
+            font-family: $font-display;
+            font-size: 3rem;
+            text-align: center;
+            line-height: 3rem;
         }
     }
 }

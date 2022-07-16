@@ -44,7 +44,14 @@ $minWidth-desktop : 1920px;
 html{
     font-size: 5px;
     @include desktop{
-        font-size: 7px;
+        font-size: 6px;
     }
 }
 $fastMotion: .2s all ease;
+
+.main{
+  padding-top: 21rem;
+  &-stick{
+    padding-top: 0;
+  }
+}

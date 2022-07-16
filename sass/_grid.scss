@@ -16,6 +16,9 @@ $column: 12;
         padding-right: $offset;
         padding-left: $offset;
     }
+    &-fullScreen{
+        height: 100vh;
+    }
   }
 
   .row{

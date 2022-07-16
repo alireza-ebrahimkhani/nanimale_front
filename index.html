@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
-	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -181,7 +181,69 @@
 		</div>
 	</div>
 </header>
-<main class="main" style="height: 100vh;">
+<div class="star">
+	<div class="star-text">
+		<span class="cta">FINDE</span>
+		<span class="cta">MICH</span>
+	</div>
+	<svg class="star-shape" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+		<polygon points="100,47.2 81.9,47.2 99.7,44.1 98.8,38.6 81,41.7 97.9,35.5 96,30.3 79,36.5 94.7,27.4 91.9,22.6 
+			76.3,31.6 90.1,20 86.5,15.7 72.7,27.3 84.3,13.5 80,9.9 68.4,23.7 77.4,8.1 72.6,5.3 63.5,20.9 69.7,4 64.5,2.1 58.3,19 61.4,1.2 
+			55.9,0.3 52.8,18.1 52.8,0 47.2,0 47.2,18.1 44.1,0.3 38.6,1.2 41.7,19 35.5,2.1 30.3,4 36.5,20.9 27.4,5.3 22.6,8.1 31.6,23.7 
+			20,9.9 15.7,13.5 27.3,27.3 13.5,15.7 9.9,20 23.7,31.6 8.1,22.6 5.3,27.4 20.9,36.5 4,30.3 2.1,35.5 19,41.7 1.2,38.6 0.3,44.1 
+			18.1,47.2 0,47.2 0,52.8 18.1,52.8 0.3,55.9 1.2,61.4 19,58.3 2.1,64.5 4,69.7 20.9,63.5 5.3,72.6 8.1,77.4 23.7,68.4 9.9,80 
+			13.5,84.3 27.3,72.7 15.7,86.5 20,90.1 31.6,76.3 22.6,91.9 27.4,94.7 36.5,79 30.3,96 35.5,97.9 41.7,81 38.6,98.8 44.1,99.7 
+			47.2,81.9 47.2,100 52.8,100 52.8,81.9 55.9,99.7 61.4,98.8 58.3,81 64.5,97.9 69.7,96 63.5,79.1 72.6,94.7 77.4,91.9 68.4,76.3 
+			80,90.1 84.3,86.5 72.7,72.7 86.5,84.3 90.1,80 76.3,68.4 91.9,77.4 94.7,72.6 79.1,63.5 96,69.7 97.9,64.5 81,58.3 98.8,61.4 
+			99.7,55.9 81.9,52.8 100,52.8 "/>
+	</svg>
+</div>
+<main class="main main-stick">
+	<section class="row row-fullScreen">
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper-flavour">
+						<div class="swiper-flavour-wrapper">
+							<div class="swiper-flavour-image">
+								<img src="asset/slide1.png" alt="Nanimale_Shokolade_Gorilla">
+							</div>
+							<div class="swiper-flavour-info">
+								<div>
+									<h3 class="h4 swiper-flavour-title">SHOKOLADE</h3>
+									<P class="body-1 swiper-flavour-ingridients">Short description about the active slider animal and ingredients in two or three lines</P>
+								</div>
+								<button class="swiper-button button button-container cta cta-bold-2">All Flavours</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-flavour">
+						<div class="swiper-flavour-wrapper">
+							<div class="swiper-flavour-image">
+								<img src="asset/slide1.png" alt="Nanimale_Shokolade_Gorilla">
+							</div>
+							<div class="swiper-flavour-info">
+								<div>
+									<h3 class="h4 swiper-flavour-title">CARAMEL</h3>
+									<P class="body-1 swiper-flavour-ingridients">Short description about the active slider animal and ingredients in two or three lines</P>
+								</div>
+								<button class="swiper-button button button-container cta cta-bold-2">All Flavours</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			-->
+			<div class="swiper-pagination"></div>
+		</div>
+	</section>
+	<section class="row row-fullScreen"></section>
+
 </main>
 <footer class="footer">
 	<div class="row row-bleed row-column footer-container">
@@ -226,6 +288,28 @@
 		</div>
 	</div>
 </footer>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+	var swiper = new Swiper(".mySwiper", {
+	  spaceBetween: 30,
+	  centeredSlides: true,
+	  effect: "fade",
+	  loop: true,
+	  autoplay: {
+		delay: 2500,
+		disableOnInteraction: false
+	  },
+	  pagination: {
+		el: ".swiper-pagination",
+		clickable: true
+	  },
+	  navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev"
+	  }
+	});
+  </script>
 <script src="js/js.js" type="text/javascript"></script>
 </body>
 </html>

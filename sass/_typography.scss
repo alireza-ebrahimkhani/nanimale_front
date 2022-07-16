@@ -37,3 +37,9 @@ $font-body: 'Inter', sans-serif;
   &-1{@include type($font-display, 400, 3.2rem, 3rem, auto);}
   &-2{@include type($font-body, 600, 2.84rem, 3rem, auto);}
 }
+.h4{
+  @include type($font-body, 600, 6.4rem, 5rem, auto);
+  @include phablet{
+    @include type($font-body, 600, 4.8rem, 4rem, auto);
+  }
+}
