@@ -36,6 +36,11 @@
 
 .swiper {
   width: 100%;
+  &-dark{
+    & p , h3{
+      color: $cream;
+    }
+  }
   &-pagination{
     position: absolute;
     display: inline-block;
@@ -67,6 +72,10 @@
     height: 100vh;
     height: -webkit-fill-available;
     height: fill-available;
+    background-image: url(asset/gorilla-back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     &-wrapper{
       display: flex;
       flex-direction: column;
@@ -75,7 +84,7 @@
       height: 100%;
       gap: 6rem;
       padding: 21rem 0 10rem 0;
-      background: rgb(133, 100, 100);
+      //background: rgb(133, 100, 100);
       @include laptop{
         align-items: center;
         height: 100%;
@@ -110,8 +119,10 @@
         width: 100rem;
         max-width: 100% ;
       }
+      @include laptop{
+      width: 70%;
+      }
       @include tablet{
-      width: 80%;
       flex: unset;
       order: unset;
       flex-grow: unset;
@@ -144,5 +155,10 @@
     @include phone{
       display: none;
       }
+  }
+}
+.flavour{
+  &-gorilla{
+    background-image: url(asset/gorilla-back.svg);
   }
 }

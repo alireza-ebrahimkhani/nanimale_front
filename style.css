@@ -262,7 +262,7 @@ body {
 
 .button-container {
   background-color: black;
-  color: white;
+  color: #EEE7DA;
   padding: 2rem 3rem;
   border: 0;
 }
@@ -313,6 +313,10 @@ body {
   width: 100%;
 }
 
+.swiper-dark p, .swiper-dark h3 {
+  color: #EEE7DA;
+}
+
 .swiper-pagination {
   position: absolute;
   display: inline-block;
@@ -355,6 +359,10 @@ body {
 .swiper-flavour {
   height: 100vh;
   height: fill-available;
+  background-image: url(asset/gorilla-back.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .swiper-flavour-wrapper {
@@ -365,7 +373,6 @@ body {
   height: 100%;
   gap: 6rem;
   padding: 21rem 0 10rem 0;
-  background: #856464;
 }
 
 @media only screen and (max-width: 1365px) {
@@ -416,9 +423,14 @@ body {
   max-width: 100%;
 }
 
+@media only screen and (max-width: 1365px) {
+  .swiper-flavour-image {
+    width: 70%;
+  }
+}
+
 @media only screen and (max-width: 1023px) {
   .swiper-flavour-image {
-    width: 80%;
     flex: unset;
     order: unset;
     flex-grow: unset;
@@ -463,10 +475,23 @@ body {
   }
 }
 
+.flavour-gorilla {
+  background-image: url(asset/gorilla-back.svg);
+}
+
 .header {
   width: 100%;
   z-index: 200;
   position: absolute;
+  transition: 0.2s all ease;
+}
+
+.header--dark a {
+  color: #EEE7DA;
+}
+
+.header--dark svg {
+  fill: #EEE7DA;
 }
 
 @media only screen and (max-width: 1023px) {
