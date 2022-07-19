@@ -36,12 +36,14 @@ let cupLeadChange_tl = gsap.timeline({
 	.to(".cup-slogan", {duration:2, opacity: 0}, "-=2")
 
 // appear logo
-gsap.to(".header-center",{
-    scrollTrigger: {
-        trigger: ".header-center",
-        start:() => "50% top", 
-        end:() => `+=${height/2}`, 
-        markers:true,
-        toggleClass: "header-center-show"
-        }
-})
+ScrollTrigger.create({
+    trigger: '.illustrations-section' ,
+    invalidateOnRefresh: true,
+    start: "center top", 
+    end:() => `+=${height/2}`,
+    onEnter: () => 
+    document.querySelector('.header-container').classList.remove('header-home'),
+    onLeaveBack: () => 
+    document.querySelector('.header-container').classList.add('header-home'),
+    //markers: true,
+  });
