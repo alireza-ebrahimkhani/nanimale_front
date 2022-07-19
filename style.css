@@ -546,11 +546,18 @@ body {
   position: absolute;
 }
 
+.illustrations-section {
+  background-image: url(asset/13.svg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
 .header {
   width: 100%;
   z-index: 200;
   position: fixed;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header--dark a {
@@ -585,22 +592,22 @@ body {
 
 .header-home > .header-left, .header-home > .header-right {
   width: 50%;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-home > .header-center {
   max-width: 0;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-home .header-lockup {
   opacity: 0;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-lockup {
   opacity: 1;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-container {
@@ -623,12 +630,12 @@ body {
 
 .header-right {
   width: calc((100% - 36rem) / 2);
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-left {
   width: calc((100% - 36rem) / 2);
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
   display: flex;
   justify-content: flex-end;
 }
@@ -651,7 +658,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-transparent {
@@ -703,7 +710,7 @@ body {
   position: absolute;
   top: -1.4rem;
   border-radius: 1rem;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-line::after {
@@ -714,7 +721,7 @@ body {
   position: absolute;
   top: 1.4rem;
   border-radius: 1rem;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-line--open {
@@ -727,7 +734,7 @@ body {
   top: 0rem;
   transform: rotate(-45deg);
   background-color: #EEE7DA;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-line--open::after {
@@ -735,7 +742,7 @@ body {
   top: 0rem;
   transform: rotate(45deg);
   background-color: #EEE7DA;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-drawer {
@@ -747,13 +754,13 @@ body {
   top: 0%;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .header-drawer--open {
   opacity: 1;
   visibility: visible;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -838,7 +845,7 @@ body {
   bottom: 10rem;
   left: 10rem;
   z-index: 300;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 @media only screen and (max-width: 1365px) {
@@ -863,7 +870,7 @@ body {
 
 .star--hide {
   opacity: 0;
-  transition: 0.5s 0s all ease;
+  transition: 0.3s 0s all ease;
 }
 
 .star-text {
@@ -914,7 +921,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   grid-column: 1 / 5;
-  padding: 10rem 0;
+  padding: 20rem 0;
 }
 
 @media only screen and (max-width: 1365px) {
@@ -1003,7 +1010,7 @@ body {
   display: flex;
   justify-content: space-between;
   grid-column: 9 / 13;
-  padding: 10rem 0;
+  padding: 20rem 0;
 }
 
 @media only screen and (max-width: 1365px) {
@@ -1098,7 +1105,7 @@ body {
 
 .footer-illustrations {
   grid-column: 5 / 9;
-  height: 43rem;
+  height: 63rem;
   padding: 5rem 0;
 }
 

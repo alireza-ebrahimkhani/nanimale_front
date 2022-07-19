@@ -64,5 +64,5 @@ body{
 }
 
 @mixin motion($property , $delay) {
-  transition: 0.5s $delay $property ease;
+  transition: 0.3s $delay $property ease;
 }

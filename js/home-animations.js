@@ -20,17 +20,10 @@ let cupLeadChange_tl = gsap.timeline({
         start:() => "0 0", 
         end:() => `+=${height * 2}`, 
         scrub: true, 
-        //markers:true,
+        markers:true,
         }
     });
     cupLeadChange_tl
-    .to(".cup-lead-8", {duration:1, display:"none"})
-    .to(".cup-lead-7", {duration:1, display:"none"})
-    .to(".cup-lead-6", {duration:1, display:"none"})
-    .to(".cup-lead-5", {duration:1, display:"none"})
-    .to(".cup-lead-4", {duration:1, display:"none"})
-    .to(".cup-lead-3", {duration:1, display:"none"})
-    .to(".cup-lead-2", {duration:1, display:"none"})
 	.to(".cup-lead-1", {duration:2, delay:1, yPercent: -200})
 	.to(".cup-cupGelato", {duration:2, y: -200}, "-=2")
 	.to(".cup-slogan", {duration:2, opacity: 0}, "-=2")
