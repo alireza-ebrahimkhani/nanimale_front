@@ -43,3 +43,12 @@ $font-body: 'Inter', sans-serif;
     @include type($font-body, 600, 4.8rem, 4rem, auto);
   }
 }
+.display{
+  text-transform: uppercase;
+  @include type($font-display, 400, 24rem, 26rem, auto);
+}
+.align{
+  &-center{text-align: center;}
+  &-left{text-align: left;}
+  &-right{text-align: right;}
+}

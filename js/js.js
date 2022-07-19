@@ -55,4 +55,16 @@ window.addEventListener('scroll' , ()=>{
     }
 })
 
-//
+/*
+let active_slide = document.querySelector(".swiper-slide-visible > div")
+let header = document.querySelector(".header")
+swiper.on('activeIndexChange', function () {
+    if (active_slide.classList.contains("swiper-dark")){
+        header.classList.add(active_slide)
+        console.log("hi")
+    }else{
+        header.classList.remove("header--dark")
+        console.log("bye")
+    }
+});
+*/

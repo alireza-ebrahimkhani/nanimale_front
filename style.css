@@ -260,6 +260,27 @@ body {
   }
 }
 
+.display {
+  text-transform: uppercase;
+  font-family: "Dela Gothic One", cursive;
+  font-weight: 400;
+  font-size: 24rem;
+  line-height: 26rem;
+  text-transform: auto;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
 .button-container {
   background-color: black;
   color: #EEE7DA;
@@ -479,6 +500,52 @@ body {
   background-image: url(asset/gorilla-back.svg);
 }
 
+.cup {
+  height: 100%;
+}
+
+.cup-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cup-slogan {
+  color: #EEE7DA;
+}
+
+.cup-cup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cup-cups {
+  width: 120rem;
+  height: 120rem;
+  position: relative;
+}
+
+.cup-cups > img {
+  width: 100%;
+  position: absolute;
+}
+
+.cup-leads {
+  width: 120rem;
+  position: absolute;
+  top: 0;
+}
+
+.cup-leads > img {
+  width: 100%;
+  position: absolute;
+}
+
 .header {
   width: 100%;
   z-index: 200;
@@ -517,9 +584,8 @@ body {
 }
 
 .header-container {
-  display: grid;
-  grid-template-columns: 1fr 36rem 1fr;
-  grid-gap: 5rem;
+  display: flex;
+  justify-content: center;
   padding: 5rem 0 4rem 0;
 }
 
