@@ -61,6 +61,7 @@ body{
   min-height: 100vh;
   height: -webkit-fill-available;
   height: fill-available;
+  overflow-x: hidden;
 }
 
 @mixin motion($property , $delay) {

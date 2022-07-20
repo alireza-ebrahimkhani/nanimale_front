@@ -2,14 +2,23 @@
     //background-color: white;
     width: 100%;
     z-index: 200;
-    position: absolute;
-    transition: $fastMotion;
+    position: fixed;
+    @include motion(all , 0s);
     &--dark{
         & a{
             color:$cream;;
         }
         & svg{
             fill:$cream;;
+        }
+        & .header-line{
+            background-color:$cream !important;
+            &:before{
+                background-color:$cream !important;
+            }
+            &:after{
+                background-color:$cream !important;
+            }
         }
     }
     @include tablet{
@@ -26,10 +35,27 @@
             display: none;
         }
     }
+    &-home{
+        & > .header-left , & > .header-right{
+            width: 50%;
+            @include motion(all , 0s);
+        }
+        & > .header-center {
+            max-width: 0;
+            @include motion(all , 0s);
+        }
+        & .header-lockup{
+            opacity:0;
+            @include motion(all , 0s);
+        }
+    }
+    &-lockup{
+        opacity: 1;
+        @include motion(all , 0s);
+    }
     &-container{
-        display: grid;
-        grid-template-columns: 1fr 36rem 1fr;
-        grid-gap: 5rem;
+        display: flex;
+        justify-content: center;
         padding: 5rem 0 4rem 0;
         @include tablet{
             padding: 5rem 0;
@@ -39,16 +65,18 @@
         }
     }
     &-right{
-        justify-self: left;
-        align-self: start;
+        width: calc((100% - 36rem) / 2);
+        @include motion(all , 0s);
         & a{
             @extend .cta;
             @extend .cta-light-2;
         }
     }
     &-left{
-        justify-self: right;
-        align-self: start;
+        width: calc((100% - 36rem) / 2);
+        @include motion(all , 0s);
+        display: flex;
+        justify-content: flex-end;
         & a{
             @extend .cta;
             @extend .cta-light-2;
@@ -64,7 +92,13 @@
         }
     }
     &-center{
-        justify-self: center;
+        width: 42rem;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        @include motion(all , 0s);
     }
     &-transparent{
         background-color: transparent;
@@ -104,7 +138,7 @@
             position: absolute;
             top:-1.4rem;
             border-radius: 1rem;
-            transition: $fastMotion;
+            @include motion(all , 0s);
         }
         &::after{
             content: "";
@@ -114,7 +148,7 @@
             position: absolute;
             top:1.4rem;
             border-radius: 1rem;
-            transition: $fastMotion;
+            @include motion(all , 0s);
         }
         &--open{
             height: 0;
@@ -124,14 +158,14 @@
                 top:0rem;
                 transform: rotate(-45deg);
                 background-color: $cream;
-                transition: $fastMotion;
+                @include motion(all , 0s);
             }
             &::after{
                 content: "";
                 top:0rem;
                 transform: rotate(45deg);
                 background-color: $cream;
-                transition: $fastMotion;
+                @include motion(all , 0s);
             }
         }
     }
@@ -144,11 +178,11 @@
         top: 0%;
         opacity: 0;
         visibility: hidden;
-        transition: $fastMotion;
+        @include motion(all , 0s);
         &--open{
             opacity: 1;
             visibility: visible;
-            transition: $fastMotion;
+            @include motion(all , 0s);
         }
         @include tablet{
             display: block;
@@ -224,7 +258,7 @@
     bottom: 10rem;
     left: 10rem;
     z-index: 300;
-    transition: $fastMotion;
+    @include motion(all , 0s);
     @include laptop{
         bottom: 5rem;
         left: 5rem;
@@ -240,7 +274,7 @@
     }
     &--hide{
         opacity: 0;
-        transition: $fastMotion;
+        @include motion(all , 0s);
     }
     &-text{
         position: absolute;

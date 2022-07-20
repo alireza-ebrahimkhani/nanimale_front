@@ -55,16 +55,13 @@ window.addEventListener('scroll' , ()=>{
     }
 })
 
-/*
-let active_slide = document.querySelector(".swiper-slide-visible > div")
-let header = document.querySelector(".header")
-swiper.on('activeIndexChange', function () {
-    if (active_slide.classList.contains("swiper-dark")){
-        header.classList.add(active_slide)
-        console.log("hi")
-    }else{
-        header.classList.remove("header--dark")
-        console.log("bye")
-    }
+
+let body_body = document.querySelector("body")
+//body_body.classList.add('freeze-force')
+document.addEventListener("DOMContentLoaded", function() {
+    let logoMotion = document.querySelector(".hero-logoMotion")
+    logoMotion.play();
+    logoMotion.addEventListener("complete",()=>{
+        //body_body.classList.remove('freeze-force')
+})
 });
-*/

@@ -3,9 +3,13 @@
   position: unset;
   height: unset;
   @include tablet{
+    width: 100%;
     overflow-y: hidden;
     position: fixed;
     height: 100vh;
+  }
+  &-force{
+    overflow: hidden;
   }
 }
 .main{
@@ -200,10 +204,19 @@
     }
   }
 }
-
-.illustrations-section{
-  background-image: url(asset/13.svg);
-  background-repeat: none;
-  background-size: cover;
-  background-position: center;
+.hero{
+  position: relative;
+  &-section{
+    background-color: black;
+  }
+  &-logoMotion{
+    width: 100rem;
+    &-container{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+  }
 }

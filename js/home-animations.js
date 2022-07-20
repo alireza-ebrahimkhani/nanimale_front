@@ -30,7 +30,7 @@ let cupLeadChange_tl = gsap.timeline({
 
 // appear logo
 ScrollTrigger.create({
-    trigger: '.illustrations-section' ,
+    trigger: '.hero-section' ,
     invalidateOnRefresh: true,
     start: "center top", 
     end:() => `+=${height/2}`,
