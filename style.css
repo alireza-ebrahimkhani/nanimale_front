@@ -580,13 +580,15 @@ body {
 
 .cup-cup {
   position: absolute;
+  width: 100rem;
+  max-width: 100%;
   top: 100vh;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 
 .cup-cups {
-  width: 100rem;
+  max-width: 100%;
   height: 100rem;
   position: relative;
 }
@@ -598,6 +600,7 @@ body {
 
 .cup-leads {
   width: 100rem;
+  max-width: 100%;
   position: absolute;
   top: 0;
 }
