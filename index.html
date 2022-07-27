@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<header class="header header--dark">
+<body>
+<header class="header ">
     <div class="row row-bleed header-container header-home">
         <div class="header-left">
             <ul class="header-items">
@@ -244,16 +245,39 @@
 			<div class="swiper-pagination"></div>
 		</div>
 	</section>-->
-	<section class="row row-fullScreen hero-section">
-		<div class="hero">
-			<div class="hero-container">
-				<div class="hero-logoMotion-container">
-					<lottie-player class="hero-logoMotion" src="asset/logoMotion.json"  background="transparent"  speed="1" autoplay></lottie-player>
-				</div>
+	<div class="overlay" style="display: block;"></div>
+	<div class="logoMotion">
+		<div class="logoMotion-container">
+			<lottie-player class="logoMotion-motion" src="asset/motions/logoMotion.json"  background="transparent"  speed="1.1" ></lottie-player>
+		</div>
+	</div>
+	<section class="row row-fullScreen hero darkSec">
+		<div class="hero-container">
+			<div class="hero-figures hero-leftTop">
+				<img src="asset/plant0.svg" alt="plant0" class="hero-figure hero-plant0">
+				<img src="asset/plant3.svg" alt="plant3" class="hero-figure hero-plant3">
+				<img src="asset/plant6.svg" alt="plant6" class="hero-figure hero-plant6">
+				<lottie-player class="hero-figure hero-hippopotamus" src="asset/motions/hippopotamus.json"  background="transparent" autoplay  loop speed="1" ></lottie-player>
+				<lottie-player class="hero-figure hero-tiger" src="asset/motions/tiger.json"  background="transparent" autoplay loop speed="1" ></lottie-player>
+			</div>
+			<div class="hero-figures hero-rightTop">
+				<lottie-player class="hero-figure hero-polar_bear" src="asset/motions/polar_bear.json"  background="transparent" autoplay loop speed="1" ></lottie-player>
+				<img src="asset/plant1.svg" alt="plant1" class="hero-figure hero-plant1">
+			</div>
+			<div class="hero-figures hero-leftBottom">
+				<img src="asset/plant5.svg" alt="plant5" class="hero-figure hero-plant5">
+				<img src="asset/plant7.svg" alt="plant7" class="hero-figure hero-plant7">
+				<lottie-player class="hero-figure hero-iguana" src="asset/motions/iguana.json"  background="transparent" autoplay loop speed="1" ></lottie-player>
+			</div>
+			<div class="hero-figures hero-rightBottom">
+				<img src="asset/plant2.svg" alt="plant2" class="hero-figure hero-plant2">
+				<img src="asset/plant4.svg" alt="plant4" class="hero-figure hero-plant4">
+				<lottie-player class="hero-figure hero-turtles" src="asset/motions/turtles.json"  background="transparent" autoplay loop speed="1" ></lottie-player>
+				<lottie-player class="hero-figure hero-gorilla" src="asset/motions/gorilla.json"  background="transparent" autoplay loop speed="1" ></lottie-player>
 			</div>
 		</div>
 	</section>
-	<section class="row row-fullScreen cup-section" style="background-color: black;">
+	<section class="row row-fullScreen cup-section">
 		<div class="cup">
 			<div class="cup-container">
 				<h1 class="cup-slogan display align-center">Natürlich<br>vegan und<br>saugut</h1>
@@ -270,9 +294,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="row row-fullScreen" style="background-color:green"></section>
+	<section class="row row-fullScreen darkSec" style="background-color:green"></section>
 
 </main>
+
 <footer class="footer">
 	<div class="row row-bleed row-column footer-container">
 		<div class="footer-contact">
