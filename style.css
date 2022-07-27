@@ -580,15 +580,13 @@ body {
 
 .cup-cup {
   position: absolute;
-  width: 100rem;
-  max-width: 100%;
   top: 100vh;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 
 .cup-cups {
-  max-width: 100%;
+  width: 100rem;
   height: 100rem;
   position: relative;
 }
@@ -598,16 +596,34 @@ body {
   position: absolute;
 }
 
+@media only screen and (max-width: 700px) {
+  .cup-cups {
+    width: calc(100vw - 6rem);
+    height: calc(100vw - 6rem);
+  }
+}
+
 .cup-leads {
   width: 100rem;
-  max-width: 100%;
   position: absolute;
   top: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .cup-leads {
+    width: calc(100vw - 6rem);
+  }
 }
 
 .cup-leads > img {
   width: 100%;
   position: absolute;
+}
+
+@media only screen and (max-width: 1023px) {
+  .cup-leads > img {
+    width: calc(100vw - 6rem);
+  }
 }
 
 .cup-section {

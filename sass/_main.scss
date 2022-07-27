@@ -188,28 +188,35 @@
   }
   &-cup{
     position: absolute;
-    width: 100rem;
-    max-width: 100%;
     top: 100vh;
     left: 50%;
     transform: translate(-50% , 0%);
   }
   &-cups{
-    max-width: 100%;
+    width: 100rem;
     height: 100rem;
     position: relative;
     & > img{
       width: 100%;
       position: absolute;
     }
+    @include phablet{
+      width: calc(100vw - 6rem);
+      height: calc(100vw - 6rem);
+    }
   }
   &-leads{
     width: 100rem;
-    max-width: 100%;
+    @include phablet{
+      width: calc(100vw - 6rem);
+    }
     position: absolute;
     top: 0;
     & > img{
       width: 100%;
+      @include tablet{
+        width: calc(100vw - 6rem);
+      }
       position: absolute;
     }
   }
