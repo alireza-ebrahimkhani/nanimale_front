@@ -558,7 +558,7 @@ body {
 .cup-container {
   width: 100%;
   height: 100%;
-  max-width: 80%;
+  max-width: calc(100% - 4rem);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -568,6 +568,14 @@ body {
 
 .cup-slogan {
   color: black;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+  .cup-slogan {
+    font-size: 11vw;
+    line-height: 11vw;
+  }
 }
 
 .cup-cup {
