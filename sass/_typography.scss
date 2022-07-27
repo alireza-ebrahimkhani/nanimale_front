@@ -46,6 +46,8 @@ $font-body: 'Inter', sans-serif;
 .display{
   text-transform: uppercase;
   @include type($font-display, 400, 24rem, 26rem, auto);
+  @include tablet{@include type($font-display, 400, 16rem, 20rem, auto); }
+  @include phablet{@include type($font-display, 400, 12rem, 16rem, auto); }
 }
 .align{
   &-center{text-align: center;}
