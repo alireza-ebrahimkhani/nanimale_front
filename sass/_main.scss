@@ -214,9 +214,6 @@
     top: 0;
     & > img{
       width: 100%;
-      @include tablet{
-        width: calc(100vw - 6rem);
-      }
       position: absolute;
     }
   }

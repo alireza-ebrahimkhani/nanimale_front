@@ -620,12 +620,6 @@ body {
   position: absolute;
 }
 
-@media only screen and (max-width: 1023px) {
-  .cup-leads > img {
-    width: calc(100vw - 6rem);
-  }
-}
-
 .cup-section {
   background-color: #EEE7DA;
 }
