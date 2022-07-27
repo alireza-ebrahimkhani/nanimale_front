@@ -13,21 +13,10 @@ let cupLeadChange_tl = gsap.timeline({
         }
     });
     cupLeadChange_tl
-	.to(".cup-lead-1", {duration:2, delay:1, yPercent: -300})
+	.to(".cup-cup", {duration:2, delay:1, yPercent:-50, top:"50%"})
+	.to(".cup-lead-1", {duration:2, delay:1, yPercent: -300}, "-=2")
 	.to(".cup-cupGelato", {duration:2, y: -180}, "-=2")
 
-  // cup arrival
-  let cup_tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".cup-section",
-        start:() => "0 0", 
-        end:() => `+=${height * 2}`, 
-        scrub: true, 
-      }
-  });
-
-  cup_tl
-    .from(".cup-cup", {yPercent: 100})
 
 
 // appear logo

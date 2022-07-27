@@ -55,31 +55,29 @@ window.addEventListener('scroll' , ()=>{
     }
 })
 
+//entrance
 let header = document.querySelector(".header")
 let body_body = document.querySelector("body")
-body_body.classList.add('freeze-force')
-let overlay = document.querySelector(".overlay")
-document.addEventListener("DOMContentLoaded", function() {
-    let logoMotion = document.querySelector(".logoMotion-motion")
-    logoMotion.play();
-    logoMotion.addEventListener("complete",()=>{
-        overlay.classList.add('overlay--hide')
+//let overlay = document.querySelector(".overlay")
+if (window.scrollY == 0){
+    body_body.classList.add('freeze-force')
+    document.addEventListener("DOMContentLoaded", function() {
+        let logoMotion = document.querySelector(".logoMotion-motion")
+        logoMotion.play();
+        logoMotion.addEventListener("complete",()=>{
         body_body.classList.remove('freeze-force')
         header.style.zIndex = 402 
-})
+    })
 });
+} 
+
 
 document.addEventListener("DOMContentLoaded", function(){
-
     let elements = document.getElementsByTagName('lottie-player');
-  
     for (var i = 0; i < elements.length; i++) {
-    
       elements[i].addEventListener('play', (event) => {
-        // console.log(event.target.shadowRoot.querySelector('svg').style.transform);
         event.target.shadowRoot.querySelector('svg').style.transform = '';
       });
-      elements[i].play(); // trigger (again)
-  
+      elements[i].play();
     }
   });
