@@ -230,7 +230,13 @@
   height: 100vh;
   z-index: 401;
   &-motion{
-    width: 120rem;
+    width: 40vw;
+    @include tablet{
+      width: 60vw;
+    }
+    @include phablet{
+      width: 70vw;
+    }
   }
   &-container{
     width: 100%;
@@ -295,6 +301,10 @@
     @include square{
       left: 14%;
     }
+    @include long{
+      left: 40%;
+      top: 20%;
+    }
   }
   &-plant3{
     width: 26%;
@@ -306,12 +316,19 @@
     }
   }
   &-plant4{
-    width: 40%;
-    bottom: 0;
-    right: 0%;
+    width: 70%;
+    bottom: -26%;
+    right: -20%;
     z-index: 2;
     @include square{
+      width: 80%;
+      bottom: -24%;
+      right: -18%;
+    }
+    @include long{
       width: 60%;
+      bottom: -20%;
+      right: -14%;
     }
   }
   &-plant5{
@@ -319,6 +336,9 @@
     bottom: 0;
     left: 1%;
     z-index: 2;
+    @include square{
+      width: 60%; 
+    }
   }
   &-plant6{
     width: 16%;
@@ -331,6 +351,9 @@
     width: 48%;
     bottom: 0%;
     right: 0%;
+    @include square{
+      width: 60%; 
+    }
   }
   &-hippopotamus{
     width:65%;
@@ -355,10 +378,15 @@
     }
   }
   &-gorilla{
-    width: 70%;
+    width: 75%;
     height: 70%;
     bottom: 20%;
-    right: 5%;
+    right: -4%;
+    @include long{
+      width:55%;
+      right:0%;
+      bottom: 7%;
+    }
   }
   &-polar_bear{
     width: 70%;
@@ -379,6 +407,7 @@
     height: 60%;
     bottom: 0;
     left: 0;
+    
   }
 
 }

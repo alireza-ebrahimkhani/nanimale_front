@@ -55,22 +55,6 @@ window.addEventListener('scroll' , ()=>{
     }
 })
 
-//entrance
-let header = document.querySelector(".header")
-let body_body = document.querySelector("body")
-//let overlay = document.querySelector(".overlay")
-if (window.scrollY == 0){
-    body_body.classList.add('freeze-force')
-    document.addEventListener("DOMContentLoaded", function() {
-        let logoMotion = document.querySelector(".logoMotion-motion")
-        logoMotion.play();
-        logoMotion.addEventListener("complete",()=>{
-        body_body.classList.remove('freeze-force')
-        header.style.zIndex = 402 
-    })
-});
-} 
-
 
 document.addEventListener("DOMContentLoaded", function(){
     let elements = document.getElementsByTagName('lottie-player');

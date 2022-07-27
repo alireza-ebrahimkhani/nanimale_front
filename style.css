@@ -638,7 +638,19 @@ body {
 }
 
 .logoMotion-motion {
-  width: 120rem;
+  width: 40vw;
+}
+
+@media only screen and (max-width: 1023px) {
+  .logoMotion-motion {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .logoMotion-motion {
+    width: 70vw;
+  }
 }
 
 .logoMotion-container {
@@ -719,6 +731,13 @@ body {
   }
 }
 
+@media (max-aspect-ratio: 3 / 4) {
+  .hero-plant2 {
+    left: 40%;
+    top: 20%;
+  }
+}
+
 .hero-plant3 {
   width: 26%;
   top: 4%;
@@ -733,15 +752,25 @@ body {
 }
 
 .hero-plant4 {
-  width: 40%;
-  bottom: 0;
-  right: 0%;
+  width: 70%;
+  bottom: -26%;
+  right: -20%;
   z-index: 2;
 }
 
 @media (max-aspect-ratio: 4 / 3) {
   .hero-plant4 {
+    width: 80%;
+    bottom: -24%;
+    right: -18%;
+  }
+}
+
+@media (max-aspect-ratio: 3 / 4) {
+  .hero-plant4 {
     width: 60%;
+    bottom: -20%;
+    right: -14%;
   }
 }
 
@@ -750,6 +779,12 @@ body {
   bottom: 0;
   left: 1%;
   z-index: 2;
+}
+
+@media (max-aspect-ratio: 4 / 3) {
+  .hero-plant5 {
+    width: 60%;
+  }
 }
 
 .hero-plant6 {
@@ -764,6 +799,12 @@ body {
   width: 48%;
   bottom: 0%;
   right: 0%;
+}
+
+@media (max-aspect-ratio: 4 / 3) {
+  .hero-plant7 {
+    width: 60%;
+  }
 }
 
 .hero-hippopotamus {
@@ -797,10 +838,18 @@ body {
 }
 
 .hero-gorilla {
-  width: 70%;
+  width: 75%;
   height: 70%;
   bottom: 20%;
-  right: 5%;
+  right: -4%;
+}
+
+@media (max-aspect-ratio: 3 / 4) {
+  .hero-gorilla {
+    width: 55%;
+    right: 0%;
+    bottom: 7%;
+  }
 }
 
 .hero-polar_bear {
