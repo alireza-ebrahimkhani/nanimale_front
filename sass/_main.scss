@@ -259,6 +259,7 @@
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
   }
   &-rightTop{
     @include long{
@@ -281,13 +282,20 @@
     }
   }
   &-plant0{
-    width: 40%;
-    top: -30%;
-    left: 35%;
+    width: 60%;
+    top: -68%;
+    left: 25%;
+    @include square{
+      top: -40%;
+    }
+    @include long{
+      width: 70%;
+      top: -40%;
+    }
   }
   &-plant1{
-    width: 50%;
-    top: 12rem;
+    width: 60%;
+    top: 30px;
     right: 3%;
     z-index: 2;
   }
@@ -296,15 +304,17 @@
     top: 10%;
     left: 30%;
     @include square{
-      left: 14%;
+      width: 35%;
+      left: 24%;
     }
     @include long{
-      left: 40%;
+      width: 45%;
+      left: 30%;
       top: 20%;
     }
   }
   &-plant3{
-    width: 26%;
+    width: 30%;
     top: 4%;
     left: 10%;
     @include long{
@@ -323,88 +333,134 @@
       right: -18%;
     }
     @include long{
-      width: 60%;
+      width: 71%;
       bottom: -20%;
-      right: -14%;
+      right: -17%;
     }
   }
   &-plant5{
-    width: 40%;
-    bottom: 0;
-    left: 1%;
+    width: 55%;
+    bottom: -40px;
+    left: 0%;
     z-index: 2;
     @include square{
       width: 60%; 
+      bottom: 0;
     }
   }
   &-plant6{
-    width: 16%;
+    width: 15%;
     bottom: -15%;
     left: 4%;
     transform: rotate(30deg);
     z-index: 2;
+    @include square{
+      width: 20%;
+      bottom: -20%;
+      left: 13%;
+    }
+    @include long{
+      width: 25%;
+      bottom: 18%;
+      left: unset;
+      right: 10%;
+      z-index: 0;
+    }
   }
   &-plant7{
-    width: 48%;
+    width: 59%;
     bottom: 0%;
     right: 0%;
     @include square{
-      width: 60%; 
+      width: 62%;
+      right: -10%;
     }
   }
   &-hippopotamus{
-    width:65%;
-    height: 65%;
-    bottom:5%;
-    left:-5%;
+    width: 75%;
+    height: 75%;
+    bottom: 5%;
+    left: -9%;
     @include long{
-      bottom:unset;
-      width:55%;
-      right:-10%;
-      top: 15%;
+      width: 70%;
+      height: 70%;
+      left: -5%;
+      bottom: 10%;
     }
   }
   &-tiger{
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     top: 5%;
-    right:4%;
+    right: -14%;
+    @include square{
+      right: -24%;
+    }
     @include long{
-      right:-10%;
+      right: -5%;
       top: 0%;
+      width: 65%;
+      height: 58%;
     }
   }
   &-gorilla{
-    width: 75%;
-    height: 70%;
-    bottom: 20%;
-    right: -4%;
+    width: 60%;
+    height: 95%;
+    bottom: 10%;
+    right: 0;
+    @include square{
+      width: 70%;
+      height: 70%;
+    }
     @include long{
-      width:55%;
-      right:0%;
-      bottom: 7%;
+      width: 75%;
+      height: 75%;
+      right: -5%;
+      bottom: 0%;
     }
   }
   &-polar_bear{
-    width: 70%;
-    height: 70%;
-    top: 0%;
-    left: 0%;
-    transform: rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    left: -5%;
+    @include square{
+      width: 90%;
+      height: 90%;
+      left: 1%;
+      top: 16%;
+    }
   }
   &-iguana{
-    width: 70%;
-    height: 70%;
-    top: 0%;
-    left: 5%;
+    width: 60%;
+    height: 90%;
+    top: -24%;
+    left: 15%;
     transform: rotate(45deg);
+    @include square{
+      width:80%;
+      height: 80%;
+      top: 0%;
+    }
   }
   &-turtles{
     width: 60%;
-    height: 60%;
-    bottom: 0;
+    height: 80%;
+    bottom: -20px;
     left: 0;
-    
+    @include square{
+      width: 70%;
+      height: 70%;
+      bottom: 10%;
+      left: -10%;
+    }
+    @include long{
+      width: 75%;
+      height: 76%;
+      bottom: unset;
+      top: 20%;
+      left: -5%;
+    }
   }
 
 }

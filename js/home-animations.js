@@ -46,17 +46,21 @@ ScrollTrigger.create({
 
 
 //entrance
+window.onbeforeunload = () => {  
+    window.scrollTo(0, 0);  
+  };
 let header = document.querySelector(".header")
 let body_body = document.querySelector("body")
-//let overlay = document.querySelector(".overlay")
-if (window.scrollY == 0){
+let overlay = document.querySelector(".overlay")
     body_body.classList.add('freeze-force')
     document.addEventListener("DOMContentLoaded", function() {
         let logoMotion = document.querySelector(".logoMotion-motion")
         logoMotion.play();
         logoMotion.addEventListener("complete",()=>{
+        overlay.classList.add('overlay--hide')
         body_body.classList.remove('freeze-force')
         header.style.zIndex = 402 
+        overlay.style.display ="none"
         })
     });
     //header & float
@@ -65,7 +69,7 @@ if (window.scrollY == 0){
     //jungle animation
     let jungle = gsap.timeline({delay:2.2,});
     jungle
-    .from(".hero-plant0", {duration:.2, display:"none"})
+    .from(".hero-plant0", {duration:.2,delay:1, display:"none"})
     .from(".hero-hippopotamus", {duration:.2, display:"none"})
     .from(".hero-plant1", {duration:.2, display:"none"})
     .from(".hero-plant2", {duration:.2, display:"none"},"-=.5")
@@ -77,7 +81,7 @@ if (window.scrollY == 0){
     .from(".hero-plant6", {duration:.2, display:"none"})
     .from(".hero-gorilla", {duration:2, xPercent:120, yPercent:120},"-=.5")
     .from(".hero-turtles", {duration:1, yPercent:100},"-=2")
-    .from(".hero-tiger", {duration:.2, display:"none"}, "-=2")
+    .from(".hero-tiger", {duration:.2, scale:0, display:"none"}, "-=2")
     .from(".hero-plant7", {duration:.2, display:"none"},"-=2")
-} 
+
 

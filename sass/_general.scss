@@ -42,7 +42,12 @@ $minWidth-desktop : 1920px;
     }
 }
 @mixin long() {
-  @media (max-aspect-ratio: 3/4) {
+  @media (max-aspect-ratio: 2/3) {
+      @content;
+    }
+}
+@mixin square() {
+  @media (max-aspect-ratio: 1/1) {
       @content;
     }
 }
