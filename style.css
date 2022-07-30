@@ -9,6 +9,7 @@
 }
 
 html {
+  min-height: 100vh;
   height: fill-available;
   font-size: 5px;
 }
