@@ -15,7 +15,7 @@ let cupLeadChange_tl = gsap.timeline({
     cupLeadChange_tl
 	.to(".cup-cup", {duration:2, delay:1, yPercent:-50, top:"50%"}, "-=1.8")
 	.to(".cup-lead-1", {duration:2, delay:1, yPercent: -300}, "-=2")
-	.to(".cup-cupGelato", {duration:2, y: -180}, "-=2")
+	.to(".cup-cupGelato", {duration:2, y: -150}, "-=2")
 
 
 
